@@ -1,0 +1,25 @@
+body{
+    background: rgb(220, 243, 193);
+}
+
+.full-width{
+    width: 100%;
+
+}
+
+
+img { 
+
+    border-top: 80px;
+    border-top: 80px;
+    border-bottom: 80px;
+    border-bottom: 80px;
+   
+}
+.img-fluid{
+    min-height:min-content;
+    min-height:min-content;
+    max-height: max-content;
+    box-shadow:  12px 12px 22px rgb(233, 7, 7);
+    text-align: center;
+}

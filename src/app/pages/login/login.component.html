@@ -1,0 +1,76 @@
+
+<body>
+    <div class="bootstrap-wrapper">
+      <div class="container">
+          <div class="row" style="margin-top: 20px ;">
+              
+              <div class="col-md-4 offset-1 ">
+                  <div class="container text-center">
+                      <img src="../../../assets/logo.jpg" alt="dashboard_image"  class="img-fluid" style="margin-top: 200px ;">
+                      
+                   </div>
+                </div>
+    
+              <div class="col-md-4 offset-1 ">
+    
+                <!-- {{user | json}} -->
+                  <form (ngSubmit)="formLogin()">
+                    
+                    <!-- {formGroup}= "loginForm" (ngSubmit)="formLogin() -->
+                    <!-- <div class="container text-center">
+                      <h2>Basic Role select</h2>
+                      <mat-form-field appearance="fill">
+                        <mat-label>Role</mat-label>
+                        <select  matNativeControl required >
+                          <option [(ngValue)]="user.roleIdLong" value="1" name="1">User</option>
+                          <option [(ngValue)]="user.roleIdLong" value="2" name="2">Admin</option>
+                          
+                        </select>
+                      </mat-form-field> -->
+                  <!-- </div> -->
+                    
+                      <!-- user name field -->
+                      <mat-card style="margin-top: 100px ">
+                        <h1 class="text-center" style="color:aqua">Login Here !!</h1>
+                      <mat-form-field style="margin-top: 60px " class="full-width" appearance="outline">
+                          <mat-label>User Name</mat-label>
+                          <input 
+                          [(ngModel)]="user.username"
+                          
+                          matInput placeholder="Placeholder"
+                          name="username"
+                         
+                          matInput placeholder="Enter Your User Name">
+                          
+                          
+                        </mat-form-field>
+                    
+                          
+                            <mat-form-field class="full-width" appearance="outline">
+                              <mat-label>Enter your password</mat-label>
+                              <input required
+                              [(ngModel)]="user.password"
+                              
+                              matInput placeholder="Placeholder"
+                              name="password" type="password" matInput placeholder="Enter Your First Name">
+                              
+                              
+                            </mat-form-field>
+                            
+    
+    
+                          <div class="container text-center" style="margin-bottom: 60px ">
+                              
+                            <button  style="margin-left: 10px;" mat-stroked-button color="accent">Login</button>
+                              <button type="reset" style="margin-left: 20px;" mat-stroked-button color="primary">Clear</button>
+                              
+                              <a style="margin-left: 10px;" mat-stroked-button color="accent" href="http://localhost:4200/signup" >Sign Up</a>
+                            </div>
+                            </mat-card>
+                  </form>
+                  
+                </div>
+          </div>
+      </div>
+    </div>
+  </body>
